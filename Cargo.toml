@@ -1,0 +1,19 @@
+[package]
+name = "fibext"
+version = "0.1.0"
+edition = "2021"
+authors = ["cainthebest"]
+description = "A simple fibonacci calculator"
+license = "GPL-3.0"
+
+
+[profile.release]
+lto = true
+opt-level = 'z' 
+codegen-units = 1
+
+[profile.dev]
+lto = false
+opt-level = 'z'
+codegen-units = 1
+
