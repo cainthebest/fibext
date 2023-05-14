@@ -1,6 +1,6 @@
 [package]
 name = "fibext"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["cainthebest"]
 description = "A versatile Fibonacci sequence generator for Rust, with support for large numbers and optional iterator interface."
