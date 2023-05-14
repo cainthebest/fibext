@@ -5,18 +5,38 @@ edition = "2021"
 authors = ["cainthebest"]
 description = "A versatile Fibonacci sequence generator for Rust, with support for large numbers and optional iterator interface."
 license = "GPL-3.0"
+repository = "https://github.com/cainthebest/fibext"
+documentation = "https://docs.rs/fibext"
+readme = "README.md"
+keywords = [
+    "Fibonacci",
+    "Science",
+    "Mathematics",
+    "Sequence",
+    "Generator",
+    "Large",
+    "Numbers",
+    "Iterator",
+]
+categories = [
+    "Science",
+    "Mathematics",
+    "Sequence",
+    "Generator",
+    "Large",
+    "Numbers",
+    "Iterator",
+]
 
 [[bench]]
 name = "fibonacci"
 harness = false
-
 
 [dependencies]
 num-bigint = { version = "0.4", optional = true }
 
 [dev-dependencies]
 criterion = "0.3"
-
 
 [features]
 default = ["std", "checked-overflow", "iterator"]
