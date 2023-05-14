@@ -8,25 +8,8 @@ license = "GPL-3.0"
 repository = "https://github.com/cainthebest/fibext"
 documentation = "https://docs.rs/fibext"
 readme = "README.md"
-keywords = [
-    "Fibonacci",
-    "Science",
-    "Mathematics",
-    "Sequence",
-    "Generator",
-    "Large",
-    "Numbers",
-    "Iterator",
-]
-categories = [
-    "Science",
-    "Mathematics",
-    "Sequence",
-    "Generator",
-    "Large",
-    "Numbers",
-    "Iterator",
-]
+keywords = ["Fibonacci", "Science", "Mathematics", "Sequence", "Numbers"]
+categories = ["mathematics", "no-std"]
 
 [[bench]]
 name = "fibonacci"
