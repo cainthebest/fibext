@@ -155,20 +155,20 @@ impl<T: UnsignedInteger> Iterator for Fibonacci<T> {
         #[cfg(all(not(feature = "checked-overflow"), feature = "std"))]
         {
             let current = self.current.clone();
-            self.current = self.next.clone();
-            self.next = self.current.clone().unchecked_add(self.next.clone());
+            self.next = self.current.unchecked_add(self.next.clone());
+            self.current = current;
 
-            return Some(current);
+            return Some(self.current.clone());
         }
 
         // Without "checked-overflow" and without "std", use regular addition.
         #[cfg(all(not(feature = "checked-overflow"), not(feature = "std")))]
         {
             let current = self.current.clone();
-            self.current = self.next.clone();
             self.next = self.current + self.next;
+            self.current = current;
 
-            return Some(current);
+            return Some(self.current.clone());
         }
     }
 }
