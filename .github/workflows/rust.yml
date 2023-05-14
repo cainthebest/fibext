@@ -3,8 +3,31 @@ name: Rust
 on:
   push:
     branches: ["master"]
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+      - "CONTRIBUTING.md"
+      - "CODE_OF_CONDUCT.md"
+      - "SECURITY.md"
+      - ".github/**"
+      - "docs/**"
+      - "examples/**"
+      - "tests/**"
+      - "benches/**"
+
   pull_request:
     branches: ["master"]
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+      - "CONTRIBUTING.md"
+      - "CODE_OF_CONDUCT.md"
+      - "SECURITY.md"
+      - ".github/**"
+      - "docs/**"
+      - "examples/**"
+      - "tests/**"
+      - "benches/**"
 
 env:
   CARGO_TERM_COLOR: always
