@@ -19,7 +19,7 @@ harness = false
 num-bigint = { version = "0.4", optional = true }
 
 [dev-dependencies]
-criterion = "0.3"
+criterion = "0.4"
 
 [features]
 default = ["std", "checked-overflow", "iterator"]
